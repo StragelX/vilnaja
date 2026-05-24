@@ -310,7 +310,7 @@ body {
 
 .logo img {
   width: auto;
-  height: 71pxauto;
+  height: 71px;
 }
 
 .menu__list {
@@ -403,10 +403,11 @@ body {
 .hero_section-content p {
   display: block;
   padding-left: 5px;
-  font-size: 26px;
+  font-size: 16px;
   display: block;
-  color: #777777;
-  margin-bottom: 18px;
+  line-height: 1.5;
+  color: #777;
+  margin-bottom: 20px;
 }
 
 .hero_section-content .learn_more {
@@ -427,12 +428,19 @@ body {
 .hero_section-image {
   position: absolute;
   width: auto;
-  height: 700px;
+  height: 840px;
   left: 50%;
-  top: 0%;
+  top: -26%;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 0;
+}
+
+.hero_section-content-subtitle {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #000;
+  line-height: 1.5;
 }
 
 .top_button {
@@ -719,6 +727,18 @@ body {
   bottom: 19px;
 }
 
+.hero_section-content-iban {
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #51d3e9;
+  padding-left: 40px;
+}
+
+.hero_section-content-iban:hover {
+  text-decoration: underline;
+}
+
 .get_involved-content-icon2 {
   position: absolute;
   top: 19px;
@@ -863,7 +883,7 @@ body {
 }
 
 .about_us-images {
-  max-width: 650px;
+  max-width: 350px;
   width: 100%;
   height: 650px;
   position: relative;
@@ -929,24 +949,28 @@ body {
   font-family: "Dosis", sans-serif;
   font-weight: 400;
   font-size: 22px;
-  color: #777777;
+  color: #777;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
 
 .about_us-all-text h1 {
-  font-size: 60px;
+  font-size: 28px;
   font-weight: 600;
-  color: #111111;
-  margin-bottom: 20px;
+  color: #111;
+  margin-bottom: 12px;
 }
 
 .about_us-all-text p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  color: #777777;
-  line-height: 30px;
+  color: #777;
+  line-height: 1.5;
   margin-bottom: 35px;
+}
+
+.about-us-block__container {
+  margin-top: 150px;
 }
 
 .main-title {
@@ -955,7 +979,7 @@ body {
   font-size: 23px;
   letter-spacing: 1px;
   text-align: center;
-  color: #777777;
+  color: #777;
   margin-bottom: 40px;
 }
 
@@ -1156,7 +1180,7 @@ body {
 }
 
 .first_offer {
-  height: 700px;
+  height: 500px;
   width: 110px;
   cursor: pointer;
   position: relative;
