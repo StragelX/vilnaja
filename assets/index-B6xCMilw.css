@@ -17,11 +17,31 @@
   display: inline-block;
 }
 
+:root {
+  color-scheme: light;
+  --color-text: #111;
+  --color-muted: #777;
+  --color-bg: #ffffff;
+  --color-surface: #F8F5EE;
+  --color-brand: #51D3E9;
+  --color-accent: #fbc02d;
+  --focus-ring: 0 0 0 3px rgba(81, 211, 233, 0.45);
+  --radius-md: 14px;
+  --shadow-md: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --container: 80.625rem;
+  --gutter: 0.9375rem;
+}
+
 html,
 body {
   height: 100%;
-  min-width: 1360pxpx;
+  min-width: 320px;
   scroll-behavior: smooth;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
 }
 
 picture {
@@ -34,10 +54,11 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-  color: #000B1B;
-  line-height: 1;
-  font-family: " ";
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.5;
   font-size: 16px;
+  overflow-x: hidden;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -48,7 +69,7 @@ body {
 input,
 button,
 textarea {
-  font-family: " ";
+  font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
@@ -65,12 +86,47 @@ a {
   text-decoration: none;
 }
 
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 ul li {
   list-style: none;
 }
 
 img {
   vertical-align: top;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
 }
 
 h1,
@@ -115,7 +171,7 @@ time, mark, audio, video, button {
 }
 
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: "Dosis", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 .lock body {
@@ -138,12 +194,14 @@ body {
      -moz-box-orient: vertical;
      -moz-box-direction: normal;
           flex-direction: column;
-  overflow: hidden;
+  overflow-x: clip;
+  overflow-y: visible;
 }
 
 @supports (overflow: clip) {
   .wrapper {
-    overflow: clip;
+    overflow-x: clip;
+    overflow-y: visible;
   }
 }
 
@@ -159,9 +217,9 @@ body {
 }
 
 [class*=__container] {
-  max-width: 80.625rem;
+  max-width: var(--container);
   margin: 0 auto;
-  padding: 0 0.9375rem;
+  padding: 0 var(--gutter);
 }
 
 .top-menu {
@@ -364,7 +422,8 @@ body {
   margin-top: 75px;
   width: 100%;
   background-color: #F8F5EE;
-  height: 700px;
+  min-height: 700px;
+  height: auto;
   position: relative;
 }
 
@@ -385,7 +444,8 @@ body {
      -moz-box-direction: normal;
           flex-direction: column;
   width: 50%;
-  height: 700px;
+  min-height: 700px;
+  height: auto;
   color: #212121;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -394,8 +454,9 @@ body {
 }
 
 .hero_section-content-title {
-  width: 450px;
-  font-size: 63px;
+  width: 100%;
+  max-width: 450px;
+  font-size: clamp(38px, 3.6vw + 10px, 63px);
   margin-bottom: 15px;
   font-weight: 500;
 }
@@ -428,7 +489,9 @@ body {
 .hero_section-image {
   position: absolute;
   width: auto;
-  height: 840px;
+  max-width: 50vw;
+  height: auto;
+  max-height: 840px;
   left: 50%;
   top: -26%;
   -o-object-fit: cover;
@@ -698,12 +761,6 @@ body {
   display: none;
 }
 
-.get_involved {
-  // min-height: -webkit-calc(100vh - 775px);
-  // min-height: -moz-calc(100vh - 775px);
-  // min-height: calc(100vh - 775px);
-}
-
 .get_involved__container {
   position: relative;
 }
@@ -799,6 +856,11 @@ body {
   gap: 30px;
   font-size: 18px;
   color: #212121;
+}
+
+.contact_byPhone,
+.contact_byEmail {
+  min-height: 44px;
 }
 
 .contact_byPhone {
@@ -1243,7 +1305,8 @@ body {
 }
 
 .first_offer.active {
-  width: 926px !important;
+  width: 100% !important;
+  max-width: 926px;
   background-color: #f8f7f4;
 }
 
@@ -1618,7 +1681,7 @@ article p {
     left: 0;
   }
   .menu-open .menu__body::before {
-    left: 100;
+    left: 0;
   }
   .icon-menu {
     display: block;
@@ -1687,6 +1750,7 @@ article p {
   }
   .menu__body {
     top: 70px;
+    height: calc(100% - 70px);
     background-color: #f1f1f1;
   }
   .menu__list {
@@ -1729,17 +1793,19 @@ article p {
             transform: translateX(-50%);
     max-width: 600px;
     width: 100%;
-    height: 350px;
+    height: auto;
+    min-height: 0;
     border-radius: 24px;
     z-index: 2;
   }
   .hero_section-content-title {
-    font-size: 43px;
+    font-size: clamp(32px, 5vw + 8px, 43px);
     margin-bottom: 15px;
     max-width: 350px;
   }
   .hero_section-content p {
-    font-size: 24px;
+    font-size: 16px;
+    line-height: 1.6;
   }
   .hero_section-content .learn_more {
     margin-bottom: 30px;
@@ -1751,10 +1817,13 @@ article p {
        object-fit: contain;
   }
   .get_involved {
-    height: 600px;
+    height: auto;
+    padding: 40px 0;
   }
   .get_involved-content {
-    top: 200px;
+    position: static;
+    top: auto;
+    margin-top: 20px;
   }
   .contacts {
     -webkit-box-orient: vertical;
@@ -1775,6 +1844,25 @@ article p {
 @media (max-width: 767px) and (width <= 594px) {
   .hero_section-content {
     padding: 50px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top_button,
+  .donate-block_button {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .team-member {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .team-member-img {
+    width: 220px;
+    height: 220px;
   }
 }
 
@@ -1805,7 +1893,7 @@ article p {
     scroll-margin-top: 0px;
   }
   .about_us {
-    padding: 120px 0 0;
+    padding: 60px 0 0;
   }
   .about_us-images2 {
     width: 100%;
@@ -1843,7 +1931,7 @@ article p {
 
 @media (max-width: 520px) {
   .hero_section {
-    margin-top: -120px;
+    margin-top: -20px;
   }
   .hero_section-image {
     -o-object-fit: contain;
@@ -1880,16 +1968,16 @@ article p {
 
 @media (max-width: 380px) {
   .hero_section {
-    margin-top: -100px;
+    margin-top: -20px;
   }
   .hero_section-content p {
-    font-size: 20px;
+    font-size: 16px;
   }
   .about-us-block {
-    scroll-margin-top: -90px;
+    scroll-margin-top: 0px;
   }
   .about_us {
-    padding: 200px 0 0;
+    padding: 60px 0 0;
   }
   .about_us-all-text h1 {
     font-size: 36px;
