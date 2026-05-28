@@ -12,6 +12,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16-BNw9FJgq.png">
     <link rel="manifest" href="./assets/site-BykbP0ep.webmanifest">
     <link rel="mask-icon" href="./assets/safari-pinned-tab-CBIadb37.svg" color="#6568ca">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <meta name="msapplication-TileColor" content="#f4f49c">
@@ -26,8 +29,8 @@
         <div class="header">
             <div class="header__container">
                 <header class="header_content">
-                    <a class="logo">
-                        <img src="./assets/main_logo1-BPebNLeC.svg" alt="">
+                    <a class="logo" href="./" aria-label="VilnaJa — home">
+                        <img src="./assets/vilnaja-logo.svg" alt="VilnaJa" width="146" height="71" decoding="async">
                     </a>
                     <div class="header__menu menu" data-lp>
                         <button type="button" class="menu__icon icon-menu">
@@ -84,7 +87,6 @@
                         <span class="hero_section-content-number">Donate via IBAN</span>
                     </a>
                 </div>
-
             </div>
         </section>
 
@@ -104,24 +106,22 @@
                         difference.</p>
                     <div class="contacts">
                         <a href="tel:+31627580096" class="contact_byPhone">
-                            <svg class="contact_icon-phone" version="1.1" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32">
-                                <path d="M15.331 19.76c-0.026-0.018-3.034-5.075-3.044-5.14-0.622-1.359-1.124-2.749-0.078-3.366l-4.341-7.32c-1.125 0.841-4.307 5.405 1.649 15.748 6.274 10.9 12.245 10.447 13.442 9.709l-4.23-7.145c-1 0.588-1.842-0.381-3.398-2.486zM25.862 26.617l0.001-0.006c0 0-3.303-5.566-3.305-5.568-0.262-0.441-0.825-0.58-1.264-0.324l-2.024 1.197 4.242 7.166c0 0 2.024-1.191 2.023-1.195h0.004c0.465-0.276 0.572-0.846 0.323-1.27zM14.786 9.736v-0.004c0.465-0.275 0.574-0.845 0.325-1.265l0.002-0.006c0 0-3.398-5.729-3.4-5.73-0.261-0.443-0.826-0.58-1.263-0.324l-2.024 1.197 4.336 7.324c0 0 2.023-1.189 2.024-1.192z">
-                                </path>
+                            <svg class="contact_icon-phone" version="1.1" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32" aria-hidden="true">
+                                <path d="M15.331 19.76c-0.026-0.018-3.034-5.075-3.044-5.14-0.622-1.359-1.124-2.749-0.078-3.366l-4.341-7.32c-1.125 0.841-4.307 5.405 1.649 15.748 6.274 10.9 12.245 10.447 13.442 9.709l-4.23-7.145c-1 0.588-1.842-0.381-3.398-2.486zM25.862 26.617l0.001-0.006c0 0-3.303-5.566-3.305-5.568-0.262-0.441-0.825-0.58-1.264-0.324l-2.024 1.197 4.242 7.166c0 0 2.024-1.191 2.023-1.195h0.004c0.465-0.276 0.572-0.846 0.323-1.27zM14.786 9.736v-0.004c0.465-0.275 0.574-0.845 0.325-1.265l0.002-0.006c0 0-3.398-5.729-3.4-5.73-0.261-0.443-0.826-0.58-1.263-0.324l-2.024 1.197 4.336 7.324c0 0 2.023-1.189 2.024-1.192z"></path>
                             </svg>
-                            <span> (+31) 627 58 00 96</span>
+                            <span>(+31) 627 58 00 96</span>
                         </a>
                         <a href="mailto:vinnaja155@gmail.com" class="contact_byEmail">
-                            <svg class="contact_icon-email" version="1.1" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32">
-                                <path d="M11.293 19l-3.293-2.8v-8.198c0-0.558 0.448-1.002 1-1.002h15c0.545 0 1 0.449 1 1.002v8.198l-3.333 2.8h-10.374zM12.469 20l1.783 1.516h4.42l1.805-1.516h-8.007zM22.185 20.127l-2.185 1.873 5.923 5.077-0.808 0.808-5.996-5.139-5.223 0.023-0.021-0.018-5.99 5.135-0.808-0.808 5.923-5.077-2.185-1.873-3.815-3.227v-5.54l-3 2.64v14.006c0 1.101 0.89 1.994 2.004 1.994h20.993c1.107 0 2.004-0.895 2.004-1.994v-14.006l-3-2.64v5.54l-3.815 3.227zM19.909 6l-3.409-3-3.409 3h6.818zM10 10v1h13v-1h-13zM10 13v1h13v-1h-13zM10 16v1h13v-1h-13z">
-                                </path>
+                            <svg class="contact_icon-email" version="1.1" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32" aria-hidden="true">
+                                <path d="M11.293 19l-3.293-2.8v-8.198c0-0.558 0.448-1.002 1-1.002h15c0.545 0 1 0.449 1 1.002v8.198l-3.333 2.8h-10.374zM12.469 20l1.783 1.516h4.42l1.805-1.516h-8.007zM22.185 20.127l-2.185 1.873 5.923 5.077-0.808 0.808-5.996-5.139-5.223 0.023-0.021-0.018-5.99 5.135-0.808-0.808 5.923-5.077-2.185-1.873-3.815-3.227v-5.54l-3 2.64v14.006c0 1.101 0.89 1.994 2.004 1.994h20.993c1.107 0 2.004-0.895 2.004-1.994v-14.006l-3-2.64v5.54l-3.815 3.227zM19.909 6l-3.409-3-3.409 3h6.818zM10 10v1h13v-1h-13zM10 13v1h13v-1h-13zM10 16v1h13v-1h-13z"></path>
                             </svg>
                             <span>vinnaja155@gmail.com</span>
                         </a>
-
-                        <a target="_blank" href="https://www.instagram.com/vilnaja_?igsh=bHd2YWk3YmFlMDQ4&utm_source=qr" class="contact_byEmail">
-                            <svg class="contact_icon-email" version="1.1" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32">
-                                <path d="M11.293 19l-3.293-2.8v-8.198c0-0.558 0.448-1.002 1-1.002h15c0.545 0 1 0.449 1 1.002v8.198l-3.333 2.8h-10.374zM12.469 20l1.783 1.516h4.42l1.805-1.516h-8.007zM22.185 20.127l-2.185 1.873 5.923 5.077-0.808 0.808-5.996-5.139-5.223 0.023-0.021-0.018-5.99 5.135-0.808-0.808 5.923-5.077-2.185-1.873-3.815-3.227v-5.54l-3 2.64v14.006c0 1.101 0.89 1.994 2.004 1.994h20.993c1.107 0 2.004-0.895 2.004-1.994v-14.006l-3-2.64v5.54l-3.815 3.227zM19.909 6l-3.409-3-3.409 3h6.818zM10 10v1h13v-1h-13zM10 13v1h13v-1h-13zM10 16v1h13v-1h-13z">
-                                </path>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/vilnaja_?igsh=bHd2YWk3YmFlMDQ4&utm_source=qr" class="contact_byInstagram">
+                            <svg class="contact_icon-instagram" version="1.1" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32" aria-hidden="true">
+                                <path d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"></path>
+                                <path d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"></path>
+                                <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path>
                             </svg>
                             <span>@VilnaJa</span>
                         </a>
@@ -204,16 +204,37 @@
                         </p>
                     </div>
                     <div class="about_us-images">
-                        <div class="about_us-images1">
-                            <img src="./assets/1708810850450-C9zrNS_n.jpeg" alt="">
-                        </div>
-
-                        <div class="about_us-images3">
-                            <img src="./assets/1708810850036-DAejKyOo.jpeg" alt="">
+                        <div class="about_us-gallery" role="group" aria-label="VilnaJa in pictures">
+                            <figure class="about_us-gallery__item">
+                                <img src="./assets/about/about-01-map.png" alt="Map of Ukraine with flags marking communities we support" width="440" height="550" loading="lazy" decoding="async">
+                            </figure>
+                            <figure class="about_us-gallery__item">
+                                <img src="./assets/about/about-02-art-class.png" alt="Children in a creative art class wearing traditional Ukrainian shirts" width="440" height="550" loading="lazy" decoding="async">
+                            </figure>
+                            <figure class="about_us-gallery__item about_us-gallery__item--wide">
+                                <img src="./assets/about/about-04-officials.png" alt="Community event in Arnhem with local officials and VilnaJa representatives" width="900" height="560" loading="lazy" decoding="async">
+                            </figure>
+                            <figure class="about_us-gallery__item">
+                                <img src="./assets/about/about-03-event.png" alt="Memorial event organized by VilnaJa in Arnhem" width="440" height="550" loading="lazy" decoding="async">
+                            </figure>
+                            <figure class="about_us-gallery__item">
+                                <img src="./assets/about/about-07-speaker.png" alt="Speaker at a VilnaJa community gathering" width="440" height="550" loading="lazy" decoding="async">
+                            </figure>
+                            <figure class="about_us-gallery__item about_us-gallery__item--wide">
+                                <img src="./assets/about/about-05-panel.png" alt="Panel discussion with partners at a VilnaJa event" width="900" height="560" loading="lazy" decoding="async">
+                            </figure>
+                            <figure class="about_us-gallery__item">
+                                <img src="./assets/about/about-08-crafts.png" alt="Traditional Ukrainian beadwork at a community fair" width="440" height="550" loading="lazy" decoding="async">
+                            </figure>
+                            <figure class="about_us-gallery__item">
+                                <img src="./assets/about/about-09-ceremony.png" alt="Moment of remembrance with the Ukrainian flag" width="440" height="550" loading="lazy" decoding="async">
+                            </figure>
+                            <figure class="about_us-gallery__item about_us-gallery__item--feature">
+                                <img src="./assets/about/about-10-rally-collage.png" alt="Collage of solidarity rallies supporting Ukraine" width="900" height="700" loading="lazy" decoding="async">
+                            </figure>
                         </div>
                     </div>
                 </section>
-
             </div>
         </div>
 
@@ -270,7 +291,6 @@
                             ensuring that our heritage thrives in a new environment.</p>
                     </div>
                 </article>
-
             </section>
         </div>
 
@@ -338,45 +358,49 @@
         <section id="offers" class="offers">
             <div class="offers__container">
                 <h2 class="offers_title">WHAT WE DO</h2>
-                <div class="offers_content">
-                    <div class="first_offer active">
-                        <h2 class="first_offer-title"> Community support</h2>
-                        <div class="first_offer-content">
-                            <h2 class="first_offer-content-title"> Community support</h2>
+                <div class="offers_content offers-accordion" data-offers-accordion>
+                    <article class="offers-accordion__item is-active">
+                        <button type="button" class="offers-accordion__trigger" aria-expanded="true">
+                            <span class="offers-accordion__label">Community support</span>
+                        </button>
+                        <div class="offers-accordion__panel">
                             <p>We organize group activities that help people connect, share experiences, and reduce isolation.</p>
                         </div>
-                    </div>
-                    <div class="first_offer">
-                        <h2 class="first_offer-title">Women empowerment</h2>
-                        <div class="first_offer-content">
-                            <h2 class="first_offer-content-title">Women empowerment</h2>
-                            <p>We create safe spaces for women to explore identity, resilience, and personal growth through group sessions and workshops..</p>
+                    </article>
+                    <article class="offers-accordion__item">
+                        <button type="button" class="offers-accordion__trigger" aria-expanded="false">
+                            <span class="offers-accordion__label">Women empowerment</span>
+                        </button>
+                        <div class="offers-accordion__panel">
+                            <p>We create safe spaces for women to explore identity, resilience, and personal growth through group sessions and workshops.</p>
                         </div>
-                    </div>
-                    <div class="first_offer">
-                        <h2 class="first_offer-title">Cultural events</h2>
-                        <div class="first_offer-content">
-                            <h2 class="first_offer-content-title">Cultural events</h2>
+                    </article>
+                    <article class="offers-accordion__item">
+                        <button type="button" class="offers-accordion__trigger" aria-expanded="false">
+                            <span class="offers-accordion__label">Cultural events</span>
+                        </button>
+                        <div class="offers-accordion__panel">
                             <p>We host cultural evenings, film screenings, music events, and creative gatherings that build bridges between communities.</p>
                         </div>
-                    </div>
-                    <div class="first_offer">
-                        <h2 class="first_offer-title">Psychosocial support</h2>
-                        <div class="first_offer-content">
-                            <h2 class="first_offer-content-title">Psychosocial support</h2>
+                    </article>
+                    <article class="offers-accordion__item">
+                        <button type="button" class="offers-accordion__trigger" aria-expanded="false">
+                            <span class="offers-accordion__label">Psychosocial support</span>
+                        </button>
+                        <div class="offers-accordion__panel">
                             <p>We offer trauma-sensitive, low-threshold group support that helps participants stabilize, reconnect, and strengthen emotional resilience.</p>
                         </div>
-                    </div>
-                    <div class="first_offer">
-                        <h2 class="first_offer-title">Youth programs</h2>
-                        <div class="first_offer-content">
-                            <h2 class="first_offer-content-title">Youth programs</h2>
+                    </article>
+                    <article class="offers-accordion__item">
+                        <button type="button" class="offers-accordion__trigger" aria-expanded="false">
+                            <span class="offers-accordion__label">Youth programs</span>
+                        </button>
+                        <div class="offers-accordion__panel">
                             <p>We support children and young people through creative, educational, and social activities that encourage development, safety, and confidence.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
-
         </section>
 
         <section id="donate" class="donate">
@@ -400,6 +424,19 @@
                             donate to vilnaja
                         </a>
                     </div>
+                    <div class="donate_bank-details">
+                        <p class="donate_bank-details-title">Donate via bank transfer</p>
+                        <dl class="donate_bank-details-list">
+                            <div class="donate_bank-details-item">
+                                <dt>IBAN</dt>
+                                <dd><strong class="donate_bank-details-iban">NL98INGB0115143270</strong></dd>
+                            </div>
+                            <div class="donate_bank-details-item">
+                                <dt>Account holder</dt>
+                                <dd><strong>Stichting VilnaJa</strong></dd>
+                            </div>
+                        </dl>
+                    </div>
                     <p>Your contribution helps us organize activities, support participants, and build safe community spaces.
                         <br><br>
                         <strong>Partner with us</strong>
@@ -419,64 +456,61 @@
 
                 <div class="top-menu__sub-block">
                     <div class="top-menu__contact-block">
-                        <div class="top-menu__call-block">
+                        <a href="tel:+31627580096" class="top-menu__call-block">
                             <div class="top-menu__call-img-block">
-                                <img src="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3e%3cpath%20d='M15.331%2019.76c-0.026-0.018-3.034-5.075-3.044-5.14-0.622-1.359-1.124-2.749-0.078-3.366l-4.341-7.32c-1.125%200.841-4.307%205.405%201.649%2015.748%206.274%2010.9%2012.245%2010.447%2013.442%209.709l-4.23-7.145c-1%200.588-1.842-0.381-3.398-2.486zM25.862%2026.617l0.001-0.006c0%200-3.303-5.566-3.305-5.568-0.262-0.441-0.825-0.58-1.264-0.324l-2.024%201.197%204.242%207.166c0%200%202.024-1.191%202.023-1.195h0.004c0.465-0.276%200.572-0.846%200.323-1.27zM14.786%209.736v-0.004c0.465-0.275%200.574-0.845%200.325-1.265l0.002-0.006c0%200-3.398-5.729-3.4-5.73-0.261-0.443-0.826-0.58-1.263-0.324l-2.024%201.197%204.336%207.324c0%200%202.023-1.189%202.024-1.192z'%3e%3c/path%3e%3c/svg%3e" alt="img">
+                                <img src="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3e%3cpath%20d='M15.331%2019.76c-0.026-0.018-3.034-5.075-3.044-5.14-0.622-1.359-1.124-2.749-0.078-3.366l-4.341-7.32c-1.125%200.841-4.307%205.405%201.649%2015.748%206.274%2010.9%2012.245%2010.447%2013.442%209.709l-4.23-7.145c-1%200.588-1.842-0.381-3.398-2.486zM25.862%2026.617l0.001-0.006c0%200-3.303-5.566-3.305-5.568-0.262-0.441-0.825-0.58-1.264-0.324l-2.024%201.197%204.242%207.166c0%200%202.024-1.191%202.023-1.195h0.004c0.465-0.276%200.572-0.846%200.323-1.27zM14.786%209.736v-0.004c0.465-0.275%200.574-0.845%200.325-1.265l0.002-0.006c0%200-3.398-5.729-3.4-5.73-0.261-0.443-0.826-0.58-1.263-0.324l-2.024%201.197%204.336%207.324c0%200%202.023-1.189%202.024-1.192z'%3e%3c/path%3e%3c/svg%3e" alt="">
                             </div>
                             <div class="top-menu__call-info-block">
-                                <span>Call Us for Enqulry : </span>
-                                <span> (+91) 1800-1234-1234</span>
+                                <span>Phone:</span>
+                                <span>(+31) 627 58 00 96</span>
                             </div>
-                        </div>
-                        <div class="top-menu__mail-block">
+                        </a>
+                        <a href="mailto:vinnaja155@gmail.com" class="top-menu__mail-block">
                             <div class="top-menu__call-img-block">
-                                <img src="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3e%3cpath%20d='M11.293%2019l-3.293-2.8v-8.198c0-0.558%200.448-1.002%201-1.002h15c0.545%200%201%200.449%201%201.002v8.198l-3.333%202.8h-10.374zM12.469%2020l1.783%201.516h4.42l1.805-1.516h-8.007zM22.185%2020.127l-2.185%201.873%205.923%205.077-0.808%200.808-5.996-5.139-5.223%200.023-0.021-0.018-5.99%205.135-0.808-0.808%205.923-5.077-2.185-1.873-3.815-3.227v-5.54l-3%202.64v14.006c0%201.101%200.89%201.994%202.004%201.994h20.993c1.107%200%202.004-0.895%202.004-1.994v-14.006l-3-2.64v5.54l-3.815%203.227zM19.909%206l-3.409-3-3.409%203h6.818zM10%2010v1h13v-1h-13zM10%2013v1h13v-1h-13zM10%2016v1h13v-1h-13z'%3e%3c/path%3e%3c/svg%3e" alt="img">
+                                <img src="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3e%3cpath%20d='M11.293%2019l-3.293-2.8v-8.198c0-0.558%200.448-1.002%201-1.002h15c0.545%200%201%200.449%201%201.002v8.198l-3.333%202.8h-10.374zM12.469%2020l1.783%201.516h4.42l1.805-1.516h-8.007zM22.185%2020.127l-2.185%201.873%205.923%205.077-0.808%200.808-5.996-5.139-5.223%200.023-0.021-0.018-5.99%205.135-0.808-0.808%205.923-5.077-2.185-1.873-3.815-3.227v-5.54l-3%202.64v14.006c0%201.101%200.89%201.994%202.004%201.994h20.993c1.107%200%202.004-0.895%202.004-1.994v-14.006l-3-2.64v5.54l-3.815%203.227zM19.909%206l-3.409-3-3.409%203h6.818zM10%2010v1h13v-1h-13zM10%2013v1h13v-1h-13zM10%2016v1h13v-1h-13z'%3e%3c/path%3e%3c/svg%3e" alt="">
                             </div>
                             <div class="top-menu__call-info-block">
-                                <span>Mail Us for Enqulry : </span>
-                                <span> support@charity.com</span>
+                                <span>Email:</span>
+                                <span>vinnaja155@gmail.com</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="top-menu__social-block">
-                        <div class="top-menu__social-block-item fb">
-                            <img src="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3e%3cpath%20d='M19%206h5v-6h-5c-3.86%200-7%203.14-7%207v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542%200.458-1%201-1z'%3e%3c/path%3e%3c/svg%3e" alt="img">
-                        </div>
-                        <div class="top-menu__social-block-item tv">
-                            <img src="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3e%3cpath%20d='M32%207.075c-1.175%200.525-2.444%200.875-3.769%201.031%201.356-0.813%202.394-2.1%202.887-3.631-1.269%200.75-2.675%201.3-4.169%201.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625%200-6.563%202.938-6.563%206.563%200%200.512%200.056%201.012%200.169%201.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563%200.969-0.887%202.1-0.887%203.3%200%202.275%201.156%204.287%202.919%205.463-1.075-0.031-2.087-0.331-2.975-0.819%200%200.025%200%200.056%200%200.081%200%203.181%202.263%205.838%205.269%206.437-0.55%200.15-1.131%200.231-1.731%200.231-0.425%200-0.831-0.044-1.237-0.119%200.838%202.606%203.263%204.506%206.131%204.563-2.25%201.762-5.075%202.813-8.156%202.813-0.531%200-1.050-0.031-1.569-0.094%202.913%201.869%206.362%202.95%2010.069%202.95%2012.075%200%2018.681-10.006%2018.681-18.681%200-0.287-0.006-0.569-0.019-0.85%201.281-0.919%202.394-2.075%203.275-3.394z'%3e%3c/path%3e%3c/svg%3e" alt="img">
-                        </div>
-                        <div class="top-menu__social-block-item ut">
-                            <img src="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3e%3cpath%20d='M31.681%209.6c0%200-0.313-2.206-1.275-3.175-1.219-1.275-2.581-1.281-3.206-1.356-4.475-0.325-11.194-0.325-11.194-0.325h-0.012c0%200-6.719%200-11.194%200.325-0.625%200.075-1.987%200.081-3.206%201.356-0.963%200.969-1.269%203.175-1.269%203.175s-0.319%202.588-0.319%205.181v2.425c0%202.587%200.319%205.181%200.319%205.181s0.313%202.206%201.269%203.175c1.219%201.275%202.819%201.231%203.531%201.369%202.563%200.244%2010.881%200.319%2010.881%200.319s6.725-0.012%2011.2-0.331c0.625-0.075%201.988-0.081%203.206-1.356%200.962-0.969%201.275-3.175%201.275-3.175s0.319-2.587%200.319-5.181v-2.425c-0.006-2.588-0.325-5.181-0.325-5.181zM12.694%2020.15v-8.994l8.644%204.513-8.644%204.481z'%3e%3c/path%3e%3c/svg%3e" alt="img">
-                        </div>
-                        <div class="top-menu__social-block-item ins">
-                            <img src="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3e%3cpath%20d='M16%202.881c4.275%200%204.781%200.019%206.462%200.094%201.563%200.069%202.406%200.331%202.969%200.55%200.744%200.288%201.281%200.638%201.837%201.194%200.563%200.563%200.906%201.094%201.2%201.838%200.219%200.563%200.481%201.412%200.55%202.969%200.075%201.688%200.094%202.194%200.094%206.463s-0.019%204.781-0.094%206.463c-0.069%201.563-0.331%202.406-0.55%202.969-0.288%200.744-0.637%201.281-1.194%201.837-0.563%200.563-1.094%200.906-1.837%201.2-0.563%200.219-1.413%200.481-2.969%200.55-1.688%200.075-2.194%200.094-6.463%200.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781%200.094-6.463c0.069-1.563%200.331-2.406%200.55-2.969%200.288-0.744%200.638-1.281%201.194-1.838%200.563-0.563%201.094-0.906%201.838-1.2%200.563-0.219%201.412-0.481%202.969-0.55%201.681-0.075%202.188-0.094%206.463-0.094zM16%200c-4.344%200-4.887%200.019-6.594%200.094-1.7%200.075-2.869%200.35-3.881%200.744-1.056%200.412-1.95%200.956-2.837%201.85-0.894%200.888-1.438%201.781-1.85%202.831-0.394%201.019-0.669%202.181-0.744%203.881-0.075%201.713-0.094%202.256-0.094%206.6s0.019%204.887%200.094%206.594c0.075%201.7%200.35%202.869%200.744%203.881%200.413%201.056%200.956%201.95%201.85%202.837%200.887%200.887%201.781%201.438%202.831%201.844%201.019%200.394%202.181%200.669%203.881%200.744%201.706%200.075%202.25%200.094%206.594%200.094s4.888-0.019%206.594-0.094c1.7-0.075%202.869-0.35%203.881-0.744%201.050-0.406%201.944-0.956%202.831-1.844s1.438-1.781%201.844-2.831c0.394-1.019%200.669-2.181%200.744-3.881%200.075-1.706%200.094-2.25%200.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z'%3e%3c/path%3e%3cpath%20d='M16%207.781c-4.537%200-8.219%203.681-8.219%208.219s3.681%208.219%208.219%208.219%208.219-3.681%208.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16%2021.331c-2.944%200-5.331-2.387-5.331-5.331s2.387-5.331%205.331-5.331c2.944%200%205.331%202.387%205.331%205.331s-2.387%205.331-5.331%205.331z'%3e%3c/path%3e%3cpath%20d='M26.462%207.456c0%201.060-0.859%201.919-1.919%201.919s-1.919-0.859-1.919-1.919c0-1.060%200.859-1.919%201.919-1.919s1.919%200.859%201.919%201.919z'%3e%3c/path%3e%3c/svg%3e" alt="img">
-                        </div>
-                        <div class="top-menu__social-block-item tel">
-                            <img src="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3e%3cpath%20d='M16%200c-8.838%200-16%207.162-16%2016s7.162%2016%2016%2016%2016-7.163%2016-16-7.163-16-16-16zM23.863%2010.969l-2.625%2012.369c-0.181%200.881-0.712%201.087-1.45%200.681l-4-2.956-1.919%201.869c-0.225%200.219-0.4%200.4-0.8%200.4-0.519%200-0.431-0.194-0.606-0.688l-1.363-4.475-3.956-1.231c-0.856-0.262-0.862-0.85%200.194-1.269l15.412-5.95c0.7-0.319%201.381%200.169%201.113%201.25z'%3e%3c/path%3e%3c/svg%3e" alt="img">
-                        </div>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/vilnaja_?igsh=bHd2YWk3YmFlMDQ4&utm_source=qr" class="top-menu__social-block-item ins" aria-label="Instagram @VilnaJa">
+                            <img src="data:image/svg+xml,%3c!--%20Generated%20by%20IcoMoon.io%20--%3e%3csvg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20width='32'%20height='32'%20viewBox='0%200%2032%2032'%3e%3cpath%20d='M16%202.881c4.275%200%204.781%200.019%206.462%200.094%201.563%200.069%202.406%200.331%202.969%200.55%200.744%200.288%201.281%200.638%201.837%201.194%200.563%200.563%200.906%201.094%201.2%201.838%200.219%200.563%200.481%201.412%200.55%202.969%200.075%201.688%200.094%202.194%200.094%206.463s-0.019%204.781-0.094%206.463c-0.069%201.563-0.331%202.406-0.55%202.969-0.288%200.744-0.637%201.281-1.194%201.837-0.563%200.563-1.094%200.906-1.837%201.2-0.563%200.219-1.413%200.481-2.969%200.55-1.688%200.075-2.194%200.094-6.463%200.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781%200.094-6.463c0.069-1.563%200.331-2.406%200.55-2.969%200.288-0.744%200.638-1.281%201.194-1.838%200.563-0.563%201.094-0.906%201.838-1.2%200.563-0.219%201.412-0.481%202.969-0.55%201.681-0.075%202.188-0.094%206.463-0.094zM16%200c-4.344%200-4.887%200.019-6.594%200.094-1.7%200.075-2.869%200.35-3.881%200.744-1.056%200.412-1.95%200.956-2.837%201.85-0.894%200.888-1.438%201.781-1.85%202.831-0.394%201.019-0.669%202.181-0.744%203.881-0.075%201.713-0.094%202.256-0.094%206.6s0.019%204.887%200.094%206.594c0.075%201.7%200.35%202.869%200.744%203.881%200.413%201.056%200.956%201.95%201.85%202.837%200.887%200.887%201.781%201.438%202.831%201.844%201.019%200.394%202.181%200.669%203.881%200.744%201.706%200.075%202.25%200.094%206.594%200.094s4.888-0.019%206.594-0.094c1.7-0.075%202.869-0.35%203.881-0.744%201.050-0.406%201.944-0.956%202.831-1.844s1.438-1.781%201.844-2.831c0.394-1.019%200.669-2.181%200.744-3.881%200.075-1.706%200.094-2.25%200.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z'%3e%3c/path%3e%3cpath%20d='M16%207.781c-4.537%200-8.219%203.681-8.219%208.219s3.681%208.219%208.219%208.219%208.219-3.681%208.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16%2021.331c-2.944%200-5.331-2.387-5.331-5.331s2.387-5.331%205.331-5.331c2.944%200%205.331%202.387%205.331%205.331s-2.387%205.331-5.331%205.331z'%3e%3c/path%3e%3cpath%20d='M26.462%207.456c0%201.060-0.859%201.919-1.919%201.919s-1.919-0.859-1.919-1.919c0-1.060%200.859-1.919%201.919-1.919s1.919%200.859%201.919%201.919z'%3e%3c/path%3e%3c/svg%3e" alt="">
+                        </a>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function ()
         {
-            const offers = document.querySelectorAll('.first_offer');
+            const accordion = document.querySelector('[data-offers-accordion]');
+            if (!accordion) return;
 
-            offers.forEach(offer =>
+            const items = accordion.querySelectorAll('.offers-accordion__item');
+
+            items.forEach(function (item)
             {
-                offer.addEventListener('click', function ()
+                const trigger = item.querySelector('.offers-accordion__trigger');
+                if (!trigger) return;
+
+                trigger.addEventListener('click', function ()
                 {
-                    offers.forEach(item =>
+                    if (item.classList.contains('is-active')) return;
+
+                    items.forEach(function (other)
                     {
-                        item.classList.remove('active');
+                        other.classList.remove('is-active');
+                        const otherTrigger = other.querySelector('.offers-accordion__trigger');
+                        if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
                     });
-                    this.classList.add('active');
+
+                    item.classList.add('is-active');
+                    trigger.setAttribute('aria-expanded', 'true');
                 });
             });
         });
