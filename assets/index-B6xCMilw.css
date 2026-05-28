@@ -1227,6 +1227,38 @@ a.top-menu__social-block-item:hover {
   margin-bottom: 10px;
 }
 
+.activity-subtitle {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: var(--leading-heading);
+  color: #4a4a4a;
+  margin: 22px 0 12px;
+}
+
+.activity-list {
+  margin: 0 0 16px;
+  padding-left: 1.35rem;
+}
+
+.activity-list li {
+  list-style: disc;
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  color: var(--color-muted);
+  line-height: var(--leading-body);
+  margin-bottom: 10px;
+}
+
+.activity-list li::marker {
+  color: #51D3E9;
+}
+
+.activity-list strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
 .team-block {
   background: #F8F5EE;
   padding: 60px 0;
@@ -1738,10 +1770,13 @@ article p {
     border-radius: 8px;
   }
   .activity-section__info-block {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-       -moz-box-align: center;
-            align-items: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+       -moz-box-align: stretch;
+            align-items: stretch;
+    text-align: left;
+  }
+  .activity-section__info-block .activity-title {
     text-align: center;
   }
   .main-title {
@@ -1750,6 +1785,9 @@ article p {
   }
   .activity-text {
     font-size: 1rem;
+  }
+  .activity-list {
+    text-align: left;
   }
 }
 
