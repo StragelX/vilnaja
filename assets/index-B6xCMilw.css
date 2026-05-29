@@ -1363,8 +1363,10 @@ a.top-menu__social-block-item:hover {
   color: var(--color-muted);
 }
 
-.team-member--pending .team-member_info {
-  display: none;
+.team-member-quote {
+  margin-top: 12px;
+  font-style: italic;
+  text-align: center;
 }
 
 .offers {
