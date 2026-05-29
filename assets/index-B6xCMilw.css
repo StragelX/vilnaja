@@ -1363,6 +1363,10 @@ a.top-menu__social-block-item:hover {
   color: var(--color-muted);
 }
 
+.team-member--pending .team-member_info {
+  display: none;
+}
+
 .offers {
   background-color: #ffffff;
   padding: 40px 0;
